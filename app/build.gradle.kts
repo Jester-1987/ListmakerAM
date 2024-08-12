@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    // needed for using recycler view
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {

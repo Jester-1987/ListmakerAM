@@ -2,6 +2,7 @@ package com.triosng.listmakeram
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.listmakeram.R
 import com.triosng.listmakeram.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
