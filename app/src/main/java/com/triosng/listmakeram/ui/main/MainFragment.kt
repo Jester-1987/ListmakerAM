@@ -7,10 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.listmakeram.R
-
+import com.example.listmakeram.databinding.FragmentMainBinding
 
 
 class MainFragment : Fragment() {
+
+    private lateinit var binding: FragmentMainBinding
 
     companion object {
         fun newInstance() = MainFragment()
@@ -20,7 +22,6 @@ class MainFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         // TODO: Use the ViewModel
     }
 
@@ -28,7 +29,8 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        binding = FragmentMainBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
 }
